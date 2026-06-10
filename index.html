@@ -4,529 +4,292 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Uni4edu</title>
-        <link rel="stylesheet" href="output.css" />
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
-        <header class="">
-            <!--phone view header and pre header for the xl view-->
-            <div class=" bg-white xl:bg-[#D9D8D8]/30 border-b-gray-500/20">
-                <div class="mx-auto px-4 xl:px-20 w-full p-5 flex justify-between items-center  xl:py-3">
-                <img src="images/favicon (1).ico" alt="logo" class=" w-14 h-auto xl:hidden">
-            <!--nav bar section phone view-->
-            <div class="flex justify-between items-center gap-4 xl:w-full xl:justify-end xl">
-                <img src="/images/033c161d-d742-407d-8390-db0edd0e0631.svg" alt="search" class="w-5 h-5 xl:hidden">
-                <a href="#" class="hidden xl:inline font-semibold">
-                    Become an Agent
-                </a>
-                <a href="#" class="hidden xl:inline font-semibold">
-                    Partnership
-                </a>
-                <details class="group relative inline-block text-left select-none  ">
-
-                    <summary class="list-none flex items-center gap-1 text-sm font-semibold text-gray-800 cursor-pointer focus:outline-none [&::-webkit-details-marker]:hidden">
+    <body class="bg-gray-50 text-gray-800 antialiased">
+        <header class="w-full">
+            <div class="bg-white xl:bg-[#D9D8D8]/30 border-b border-gray-500/20">
+                <div class="mx-auto px-4 xl:px-20 w-full p-5 flex justify-between items-center xl:py-3">
+                    <img src="images/favicon (1).ico" alt="logo" class="w-14 h-auto xl:hidden">
+                    
+                    <div class="flex justify-between items-center gap-4 xl:w-full xl:justify-end">
+                        <img src="/images/033c161d-d742-407d-8390-db0edd0e0631.svg" alt="search" class="w-5 h-5 xl:hidden">
+                        <a href="#" class="hidden xl:inline font-semibold text-sm">Become an Agent</a>
+                        <a href="#" class="hidden xl:inline font-semibold text-sm">Partnership</a>
                         
-                        <span class="flex items-center gap-1.5">
-                        <span class="flex items-center gap-1.5 group-has-[:checked]:hidden">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 6 3" src="/images/gb.svg"><path d="M0 0h6v3H0z" fill="#012169"/><path d="M0 0l6 3M6 0L0 3" stroke="#fff" stroke-width=".6"/><path d="M0 0l6 3M6 0L0 3" stroke="#C8102E" stroke-width=".4"/><path d="M3 0v3M0 1.5h6" stroke="#fff" stroke-width="1"/><path d="M3 0v3M0 1.5h6" stroke="#C8102E" stroke-width=".6"/></svg>
-                            <span>EN</span>
-                        </span>
-                        
-                        <span class="hidden has-[:checked]:flex items-center gap-1.5">
-                            <input type="radio" name="lang-group" id="lang-en" class="hidden" checked>
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 6 3" src="/images/gb.svg"><path d="M0 0h6v3H0z" fill="#012169"/><path d="M0 0l6 3M6 0L0 3" stroke="#fff" stroke-width=".6"/><path d="M0 0l6 3M6 0L0 3" stroke="#C8102E" stroke-width=".4"/><path d="M3 0v3M0 1.5h6" stroke="#fff" stroke-width="1"/><path d="M3 0v3M0 1.5h6" stroke="#C8102E" stroke-width=".6"/></svg>
-                            <span>EN</span>
-                        </span>
-
-                        <span class="hidden has-[:checked]:flex items-center gap-1.5">
-                            <input type="radio" name="lang-group" id="lang-tr" class="hidden">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 1200 800" src="/images/tr.svg"><path d="M0 0h1200v800H0z" fill="#e30a17"/><circle cx="400" cy="400" r="200" fill="#fff"/><circle cx="450" cy="400" r="160" fill="#e30a17"/><path d="M575 400l-147-48 91-125v153l-91-125z" fill="#fff"/></svg>
-                            <span>TR</span>
-                        </span>
-
-                        <span class="hidden has-[:checked]:flex items-center gap-1.5">
-                            <input type="radio" name="lang-group" id="lang-es" class="hidden">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 750 500" src="/images/es.svg"><path d="M0 0h750v500H0z" fill="#c60b1e"/><path d="M0 125h750v250H0z" fill="#fabd00"/></svg>
-                            <span>ES</span>
-                        </span>
-
-                        <span class="hidden has-[:checked]:flex items-center gap-1.5">
-                            <input type="radio" name="lang-group" id="lang-ar" class="hidden">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h3v2H0z" fill="#006C35"/><path d="M2 1l-1 .5V1z" fill="#fff"/></svg>
-                            <span>AR</span>
-                        </span>
-
-                        <span class="hidden has-[:checked]:flex items-center gap-1.5">
-                            <input type="radio" name="lang-group" id="lang-hi" class="hidden">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h3v.67H0z" fill="#FF9933"/><path d="M0 .67h3v.66H0z" fill="#fff"/><path d="M0 1.33h3V2H0z" fill="#128807"/><circle cx="1.5" cy="1" r=".2" fill="#000080"/></svg>
-                            <span>HI</span>
-                        </span>
-
-                        <span class="hidden has-[:checked]:flex items-center gap-1.5">
-                            <input type="radio" name="lang-group" id="lang-ja" class="hidden">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm border border-gray-100" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h3v2H0z" fill="#fff"/><circle cx="1.5" cy="1" r=".6" fill="#bc002d"/></svg>
-                            <span>JA</span>
-                        </span>
-
-                        <span class="hidden has-[:checked]:flex items-center gap-1.5">
-                            <input type="radio" name="lang-group" id="lang-ko" class="hidden">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm border border-gray-100" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h3v2H0z" fill="#fff"/><circle cx="1.5" cy="1" r=".4" fill="#cd2e3a"/></svg>
-                            <span>KO</span>
-                        </span>
-
-                        <span class="hidden has-[:checked]:flex items-center gap-1.5">
-                            <input type="radio" name="lang-group" id="lang-ms" class="hidden">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 2 1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h2v1H0z" fill="#fff"/><path d="M0 0h2v.07H0zm0 .14h2v.07H0zm0 .14h2v.08H0zm0 .15h2v.07H0zm0 .14h2v.07H0zm0 .14h2v.07H0z" fill="#cc0000"/><path d="M0 0h1v.5H0z" fill="#000066"/></svg>
-                            <span>MS</span>
-                        </span>
-                                                
-                        
-
-                        <svg class="w-4 h-4 text-gray-600 transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </summary>
-
-                    <div class="absolute right-0 mt-2 w-28 bg-white rounded-md shadow-xl ring-1 ring-black/5 py-1 z-50 animate-fadeIn">
-                        
-                        <label for="lang-en" class="flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 active:bg-gray-100 cursor-pointer">
-                        <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 6 3" src="/images/gb.svg"><path d="M0 0h6v3H0z" fill="#012169"/><path d="M0 0l6 3M6 0L0 3" stroke="#fff" stroke-width=".6"/><path d="M0 0l6 3M6 0L0 3" stroke="#C8102E" stroke-width=".4"/><path d="M3 0v3M0 1.5h6" stroke="#fff" stroke-width="1"/><path d="M3 0v3M0 1.5h6" stroke="#C8102E" stroke-width=".6"/></svg>
-                        <span>EN</span>
-                        </label>
-
-                        <label for="lang-tr" class="flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 active:bg-gray-100 cursor-pointer">
-                        <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 1200 800" src="/images/tr.svg"><path d="M0 0h1200v800H0z" fill="#e30a17"/><circle cx="400" cy="400" r="200" fill="#fff"/><circle cx="450" cy="400" r="160" fill="#e30a17"/><path d="M575 400l-147-48 91-125v153l-91-125z" fill="#fff"/></svg>
-                        <span>TR</span>
-                        </label>
-
-                        <label for="lang-es" class="flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 active:bg-gray-100 cursor-pointer">
-                        <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 750 500" src="/images/es.svg"><path d="M0 0h750v500H0z" fill="#c60b1e"/><path d="M0 125h750v250H0z" fill="#fabd00"/></svg>
-                        <span>ES</span>
-                        </label>
-
-                        <label for="lang-ar" class="flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 active:bg-gray-100 cursor-pointer">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h3v2H0z" fill="#006C35"/><path d="M2 1l-1 .5V1z" fill="#fff"/></svg>
-                            <span>AR</span>
-                            </label>
-
-                            <label for="lang-hi" class="flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 active:bg-gray-100 cursor-pointer">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h3v.67H0z" fill="#FF9933"/><path d="M0 .67h3v.66H0z" fill="#fff"/><path d="M0 1.33h3V2H0z" fill="#128807"/><circle cx="1.5" cy="1" r=".2" fill="#000080"/></svg>
-                            <span>HI</span>
-                            </label>
-
-                            <label for="lang-ja" class="flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 active:bg-gray-100 cursor-pointer">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm border border-gray-100" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h3v2H0z" fill="#fff"/><circle cx="1.5" cy="1" r=".6" fill="#bc002d"/></svg>
-                            <span>JA</span>
-                            </label>
-
-                            <label for="lang-ko" class="flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 active:bg-gray-100 cursor-pointer">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm border border-gray-100" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h3v2H0z" fill="#fff"/><circle cx="1.5" cy="1" r=".4" fill="#cd2e3a"/></svg>
-                            <span>KO</span>
-                            </label>
-
-                            <label for="lang-ms" class="flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 active:bg-gray-100 cursor-pointer">
-                            <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 2 1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h2v1H0z" fill="#fff"/><path d="M0 0h2v.07H0zm0 .14h2v.07H0zm0 .14h2v.08H0zm0 .15h2v.07H0zm0 .14h2v.07H0zm0 .14h2v.07H0z" fill="#cc0000"/><path d="M0 0h1v.5H0z" fill="#000066"/></svg>
-                            <span>MS</span>
-                            </label>
-                        
-                        </div>
-                </details>
-                <img src="/images/burger_menu.svg" class="w-7 xl:hidden" alt="menu">
-            </div>
-            </div>
-            
-            </div>
-            <!--header for xl view-->
-            <div class="mx-auto px-4 xl:px-20 p-5 hidden xl:flex ">
-                <div class="flex flex-row gap-10">
-                        <img src="/images/logo.svg" alt="logo" class="hidden xl:inline w-14 h-auto">
-                    <div class="flex gap-8 items-center">
-                        <button class="flex items-center gap-3 font-semibold text-lg">
-                            Universities <img src="/images/chevron.svg" alt="chevron" class="w-6">
-                        </button>
-
-                        <button class="flex items-center gap-3 font-semibold text-lg">
-                            Masters
-                        </button>
-
-                        <button class="flex items-center gap-3 font-semibold text-lg">
-                            Language Schools <img src="/images/chevron.svg" alt="chevron" class="w-6">
-                        </button>
-
-                        <button class="flex items-center gap-3 font-semibold text-lg">
-                            Summer Schools <img src="/images/chevron.svg" alt="chevron" class="w-6">
-                        </button>
-
-                        <button class="flex items-center gap-3 font-semibold text-lg">
-                            Highschool
-                        </button>
-
-                        <button class="">
-                            <img src="/images/033c161d-d742-407d-8390-db0edd0e0631.svg" alt="search" class="w-6 object-cover rounded-lg transition-all duration-300 ease-in-out hover:opacity-75 hover:blur-[3px]">
-                        </button>
-
-                        <button class="bg-[#4EC9DF] text-black rounded-md px-6 py-2 font-medium">
-                            login
-                        </button>
+                        <details class="group relative inline-block text-left select-none">
+                            <summary class="list-none flex items-center gap-1 text-sm font-semibold text-gray-800 cursor-pointer focus:outline-none [&::-webkit-details-marker]:hidden">
+                                <span class="flex items-center gap-1.5">
+                                    <span class="flex items-center gap-1.5 group-has-[:checked]:hidden">
+                                        <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 6 3"><path d="M0 0h6v3H0z" fill="#012169"/><path d="M0 0l6 3M6 0L0 3" stroke="#fff" stroke-width=".6"/><path d="M0 0l6 3M6 0L0 3" stroke="#C8102E" stroke-width=".4"/><path d="M3 0v3M0 1.5h6" stroke="#fff" stroke-width="1"/><path d="M3 0v3M0 1.5h6" stroke="#C8102E" stroke-width=".6"/></svg>
+                                        <span>EN</span>
+                                    </span>
+                                    <span class="hidden has-[:checked]:flex items-center gap-1.5">
+                                        <input type="radio" name="lang-group" id="lang-en" class="hidden" checked>
+                                        <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 6 3"><path d="M0 0h6v3H0z" fill="#012169"/><path d="M0 0l6 3M6 0L0 3" stroke="#fff" stroke-width=".6"/><path d="M0 0l6 3M6 0L0 3" stroke="#C8102E" stroke-width=".4"/><path d="M3 0v3M0 1.5h6" stroke="#fff" stroke-width="1"/><path d="M3 0v3M0 1.5h6" stroke="#C8102E" stroke-width=".6"/></svg>
+                                        <span>EN</span>
+                                    </span>
+                                    <span class="hidden has-[:checked]:flex items-center gap-1.5">
+                                        <input type="radio" name="lang-group" id="lang-tr" class="hidden">
+                                        <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 1200 800"><path d="M0 0h1200v800H0z" fill="#e30a17"/><circle cx="400" cy="400" r="200" fill="#fff"/><circle cx="450" cy="400" r="160" fill="#e30a17"/><path d="M575 400l-147-48 91-125v153l-91-125z" fill="#fff"/></svg>
+                                        <span>TR</span>
+                                    </span>
+                                    <span class="hidden has-[:checked]:flex items-center gap-1.5">
+                                        <input type="radio" name="lang-group" id="lang-es" class="hidden">
+                                        <svg class="w-5 h-3.5 rounded-sm object-cover shadow-sm" viewBox="0 0 750 500"><path d="M0 0h750v500H0z" fill="#c60b1e"/><path d="M0 125h750v250H0z" fill="#fabd00"/></svg>
+                                        <span>ES</span>
+                                    </span>
+                                </span>
+                                <svg class="w-4 h-4 text-gray-600 transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </summary>
+                            <div class="absolute right-0 mt-2 w-28 bg-white rounded-md shadow-xl ring-1 ring-black/5 py-1 z-50">
+                                <label for="lang-en" class="flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 cursor-pointer">EN</label>
+                                <label for="lang-tr" class="flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 cursor-pointer">TR</label>
+                                <label for="lang-es" class="flex items-center gap-2.5 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 cursor-pointer">ES</label>
+                            </div>
+                        </details>
+                        <img src="/images/burger_menu.svg" class="w-7 xl:hidden" alt="menu">
                     </div>
                 </div>
-                
+            </div>
+            
+            <div class="mx-auto px-4 xl:px-20 p-5 hidden xl:flex justify-between items-center">
+                <div class="flex flex-row gap-10 items-center w-full">
+                    <img src="/images/logo.svg" alt="logo" class="w-14 h-auto">
+                    <div class="flex gap-8 items-center flex-1">
+                        <button class="flex items-center gap-2 font-semibold text-lg">Universities <img src="/images/chevron.svg" alt="chevron" class="w-4"></button>
+                        <button class="flex items-center gap-2 font-semibold text-lg">Masters</button>
+                        <button class="flex items-center gap-2 font-semibold text-lg">Language Schools <img src="/images/chevron.svg" alt="chevron" class="w-4"></button>
+                        <button class="flex items-center gap-2 font-semibold text-lg">Summer Schools <img src="/images/chevron.svg" alt="chevron" class="w-4"></button>
+                        <button class="flex items-center gap-2 font-semibold text-lg">Highschool</button>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <button><img src="/images/033c161d-d742-407d-8390-db0edd0e0631.svg" alt="search" class="w-6 object-cover rounded-lg transition-all duration-300 hover:opacity-75"></button>
+                        <button class="bg-[#4EC9DF] text-black rounded-md px-6 py-2 font-medium shadow-sm hover:bg-[#3db8ce] transition-colors">Login</button>
+                    </div>
+                </div>
             </div>
         </header>
+
         <main>
-            <section class="h-screen bg-[url('images/Hero.jpeg')] bg-cover bg-center bg-no-repeat">
-                <div class="mx-auto px-4 xl:ml-12 w-[900px] flex flex-col">
-                    <h1 class="text-white text-2xl font-bold mt-7 xl:text-5xl flex justify-start ">
-                        Find Your Perfect <br>
-                        University, Language <br>
-                        School or Summer Schools <br>
-                        Program
+            <section class="min-h-screen bg-[url('images/Hero.jpeg')] bg-cover bg-center bg-no-repeat flex items-center py-12">
+                <div class="mx-auto px-4 xl:px-20 w-full max-w-7xl flex flex-col justify-center">
+                    <h1 class="text-white text-3xl font-bold md:text-5xl lg:text-6xl mb-6 leading-tight">
+                        Find Your Perfect <br class="hidden md:inline">
+                        University, Language <br class="hidden md:inline">
+                        School or Summer Program
                     </h1>
-                    <p class="text-white font-light xl:text-xl flex justify-start ">
-                        Uni4edu simplifies the journey to studying abroad by<br> 
-                        bringing top institutions worldwide into a single digital<br> 
-                        platform. Manage your entire process—from school <br>
-                        selection to application—directly within the system and <br> 
-                        achieve your academic and career goals online.
+                    <p class="text-white font-light text-base md:text-xl max-w-2xl mb-8 leading-relaxed">
+                        Uni4edu simplifies the journey to studying abroad by bringing top institutions worldwide into a single digital platform. Manage your entire process—from school selection to application—directly within the system.
                     </p>
-                    <div class="flex flex-row gap-5">
-                        <button class="bg-[#4EC9DF] mt-4 rounded-lg w-full py-1 text-white xl:w-[150px] ">
-                        Explore Programs
-                        </button>
-                        <button class="text-[#4EC9DF] mt-4 py-2 border border-s-[#4EC9DF] mb-1 bg-white rounded-lg w-full xl:w-[150px]">
-                            Get Free Advice
-                        </button>
+                    <div class="flex flex-col sm:flex-row gap-4 max-w-md">
+                        <button class="bg-[#4EC9DF] rounded-lg px-6 py-3 text-white font-semibold shadow-md hover:bg-[#3db8ce] transition-colors">Explore Programs</button>
+                        <button class="text-[#4EC9DF] py-3 px-6 border border-[#4EC9DF] bg-white rounded-lg font-semibold shadow-md hover:bg-gray-50 transition-colors">Get Free Advice</button>
                     </div>
-                    
-                    
                 </div>
             </section>
-            
-            <div class="flex justify-center md:mt-10 sm:mt-10">
-        <div class="flex bg-blue-200 relative mt-[-7%] w-[92%] p-4 rounded-xl opacity-[0.9]">
-            <div class="w-[100%] h-[100%] rounded-b-[20px]">
-                <div class="flex font-semibold text-[18px]">
-                    <button class="blue px-10 py-3 bg-blue-500 rounded-t-lg text-white">University Programs</button>
-                    <button class="red px-10 py-3 bg-gray-100 rounded-t-lg">Language Schools</button>
-                    <button class="purple px-10 py-3 bg-gray-100 rounded-t-lg">Summer Schools</button>
-                </div>
-                <div class="flex w-full p-3 h-[70%] bg-white items-center rounded-b-[20px]">
-                    <div class="px-6 py-3 bg-white w-[25%]">
-                        <p>Location</p>
-                        <select>
-                            <option>Select Location</option>
-                            <option>Australia</option>
-                            <option>Canada</option>
-                            <option>Cyprus</option>
-                            <option>France</option>
-                            <option>Germany</option>
-                        </select>
-                    </div>
-                    <div class="px-6 py-3 bg-white w-[25%]">
-                        <p>Institution</p>
-                        <select>
-                            <option>Select Institution</option>
-                            <option>Abertay University</option>
-                            <option>Canada</option>
-                            <option>Cyprus</option>
-                            <option>France</option>
-                            <option>Germany</option>
-                        </select>
 
+            <div class="container mx-auto px-4 relative -mt-16 z-20">
+                <div class="bg-blue-200/90 p-4 rounded-xl shadow-2xl max-w-6xl mx-auto">
+                    <div class="flex flex-wrap font-semibold text-base md:text-[18px]">
+                        <button class="px-6 py-3 bg-blue-500 rounded-t-lg text-white transition-colors">University Programs</button>
+                        <button class="px-6 py-3 bg-gray-100/80 rounded-t-lg hover:bg-gray-100 transition-colors">Language Schools</button>
+                        <button class="px-6 py-3 bg-gray-100/80 rounded-t-lg hover:bg-gray-100 transition-colors">Summer Schools</button>
                     </div>
-                    <div class="px-6 py-3 bg-white w-[25%]">
-                        <p>Discipline</p>
-                        <select>
-                            <option>Select Discipline</option>
-                            <option>Agriculutral Sciences</option>
-                            <option>Architecture</option>
-                            <option>Art</option>
-                            <option>Aviation Management</option>
-                            <option>Germany</option>
-                        </select>
-                    </div>
-                    <div class="px-6 py-3 bg-white w-[25%]">
-                        <p>Program Level</p>
-                        <select>
-                            <option>Select Program Level</option>
-                            <option>Bachelor's Degree</option>
-                            <option>Certificate & Diploma</option>
-                            <option>Doctoral & PhD</option>
-                            <option>Master's & Postgraduate</option>
-                        </select>
-                    </div>
-                    <div class="bg-blue-600 h-10 w-10 rounded-lg flex items-center justify-center">
-                        <img src="images/icons8-search-50.png" class="w-7 h-7">
+                    <div class="flex flex-col lg:flex-row gap-4 p-4 bg-white rounded-b-xl rounded-tr-xl items-center shadow-inner">
+                        <div class="w-full lg:w-[23%]">
+                            <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Location</p>
+                            <select class="w-full border-gray-200 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 bg-gray-50 text-sm"><option>Select Location</option><option>Australia</option><option>Canada</option><option>Cyprus</option><option>France</option><option>Germany</option></select>
+                        </div>
+                        <div class="w-full lg:w-[23%]">
+                            <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Institution</p>
+                            <select class="w-full border-gray-200 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 bg-gray-50 text-sm"><option>Select Institution</option><option>Abertay University</option><option>Canada</option><option>Cyprus</option></select>
+                        </div>
+                        <div class="w-full lg:w-[23%]">
+                            <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Discipline</p>
+                            <select class="w-full border-gray-200 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 bg-gray-50 text-sm"><option>Select Discipline</option><option>Agricultural Sciences</option><option>Architecture</option><option>Art</option></select>
+                        </div>
+                        <div class="w-full lg:w-[23%]">
+                            <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Program Level</p>
+                            <select class="w-full border-gray-200 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 bg-gray-50 text-sm"><option>Select Program Level</option><option>Bachelor's Degree</option><option>Master's & Postgraduate</option></select>
+                        </div>
+                        <button class="bg-blue-600 hover:bg-blue-700 transition-colors h-11 w-11 rounded-lg flex items-center justify-center text-white shrink-0 mt-4 lg:mt-0">
+                            <img src="images/icons8-search-50.png" class="w-6 h-6 invert" alt="Search icon">
+                        </button>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <section class="mx-auto px-4 xl:px-20 mt-24 max-w-7xl">
+                <div class="text-center md:text-left mb-12">
+                    <h2 class="font-bold text-3xl md:text-4xl text-[#2D2D2D]">Why choose Uni4edu?</h2>
+                    <p class="mt-4 text-gray-500 max-w-3xl">Uni4Edu brings together thousands of schools and programs on a single platform, making it easy for students to apply quickly and access free counseling, visa support, and exclusive scholarship opportunities.</p>
+                </div>
                 
-            </div>
-            <section class="mx-auto px-4 xl:px-20 mt-7 relative flex flex-col">
-            <div>
-                <h2 class="font-bold text-4xl text-[#2D2D2D] ">Why choose Uni4edu?</h2>
-                <p class="mt-4 text-gray-500">Uni4Edu brings together thousands of schools and programs on a single platform, making it easy for students to apply quickly and <br>
-                    access free counseling, visa support, and exclusive scholarship opportunities.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="border border-gray-200 bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center md:items-start md:text-left hover:shadow-lg transition-shadow">
+                        <div class="flex flex-col sm:flex-row items-center gap-4 mb-4">
+                            <img src="/images/school.png" class="w-12 h-12 object-contain" alt="Icon">
+                            <h3 class="text-2xl font-semibold text-gray-800">Wide Selection <br class="hidden sm:inline">of Schools</h3>
+                        </div>
+                        <p class="text-gray-500 leading-relaxed">Explore thousands of universities, colleges, and language schools worldwide, and find the one that perfectly matches your goals and dreams.</p>
+                    </div>
+                    <div class="border border-gray-200 bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center md:items-start md:text-left hover:shadow-lg transition-shadow">
+                        <div class="flex flex-col sm:flex-row items-center gap-4 mb-4">
+                            <img src="/images/team mates.png" class="w-12 h-12 object-contain" alt="Icon">
+                            <h3 class="text-2xl font-semibold text-gray-800">Personalized <br class="hidden sm:inline">Guidance</h3>
+                        </div>
+                        <p class="text-gray-500 leading-relaxed">We help you find the right university and program based on your goals, budget, and interests with one on one expert guidance every step of the way.</p>
+                    </div>
+                    <div class="border border-gray-200 bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center md:items-start md:text-left hover:shadow-lg transition-shadow">
+                        <div class="flex flex-col sm:flex-row items-center gap-4 mb-4">
+                            <img src="/images/certificate.png" class="w-12 h-12 object-contain" alt="Icon">
+                            <h3 class="text-2xl font-semibold text-gray-800">Verified <br class="hidden sm:inline">Institutions</h3>
+                        </div>
+                        <p class="text-gray-500 leading-relaxed">Study with confidence; every university and school we work with is verified and accredited to guarantee a trusted and secure academic experience abroad.</p>
+                    </div>
+                </div>
             </section>
-            <section>
-                <section class="mx-auto px-4 xl:px-20 mt-5 flex justify-between">
-                <div class="border-2 border-gray-400/20 rounded-lg w-[350px] shadow-xl p-4 flex flex-col items-center">
-                    <div class="flex gap-6">
-                        <img src="/images/school.png" class="w-15 h-15">
-                        <p class="text-3xl font-semibold">Wide Selection <br> of Schools</p>
+
+            <section class="container mx-auto px-4 mt-20 max-w-5xl">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white shadow-xl rounded-2xl p-8 border border-gray-100 text-center">
+                    <div class="py-4 md:border-r border-gray-200">
+                        <h3 class="text-4xl text-[#37474F] font-bold mb-1">50,000 +</h3>
+                        <p class="text-gray-500 font-medium">Courses and programs</p>
                     </div>
-                    <p class="mt-4 text-gray-500 text-lg">
-                        Explore thousands of universities, <br> 
-                        colleges, and language schools <br> 
-                        worldwide, and find the one that <br> 
-                        perfectly matches your goals <br> 
-                        and dreams.
-                    </p>
-                </div>
-
-                <div class="border-2 border-gray-400/20 rounded-lg w-[350px] shadow-xl p-4 flex flex-col items-center">
-                    <div class="flex gap-6">
-                        <img src="/images/team mates.png" class="w-15 h-15">
-                        <p class="text-3xl font-semibold">Personalized <br> Guidance</p>
+                    <div class="py-4 md:border-r border-gray-200">
+                        <h3 class="text-4xl text-[#37474F] font-bold mb-1">150</h3>
+                        <p class="text-gray-500 font-medium">Study Destinations</p>
                     </div>
-                    <p class="mt-4 text-gray-500 text-lg">
-                        We help you find the right<br> 
-                        university and program based on <br> 
-                        your goals, budget, and interests <br> 
-                        with one on one expert guidance <br> 
-                        every step of the way.
-                    </p>
-                </div>
-
-                <div class="border-2 border-gray-400/20 rounded-lg w-[350px] shadow-xl p-4 flex flex-col items-center">
-                    <div class="flex gap-6">
-                        <img src="/images/certificate.png" class="w-15 h-15">
-                        <p class="text-3xl font-semibold">Verified <br> Institutions</p>
+                    <div class="py-4">
+                        <h3 class="text-4xl text-[#37474F] font-bold mb-1">98%</h3>
+                        <p class="text-gray-500 font-medium">Success Rate</p>
                     </div>
-                    <p class="mt-4 text-gray-500 text-lg">
-                        Study with confidence every<br> 
-                        university and school we work with <br> 
-                        is verified and accredited to <br> 
-                        guarantee a trusted and secure <br> 
-                        academic experience abroad.
-                    </p>
                 </div>
-                </div>
+            </section>
 
-                
-                
-                </section>
-
-                <div class="flex justify-between mx-auto px-4 ml-13 mt-30 w-[900px] flex  shadow-2xl bg-[#FFFFFF] rounded-2xl p-12  relative -top-24 ">
-            <div class="flex flex-col justify-center items-center p-2 w-1/3 border-r">
-                <h3 class="text-4xl text-[#37474F] font-bold">50.000 +</h3>
-                <h3>Courses and programs</h3>
-            </div>
-            <div class="flex flex-col justify-center items-center  w-1/3 border-r">
-                <h3 class="text-4xl text-[#37474F] font-bold"> 150 </h3>
-                <h3>Study Destination</h3>
-            </div>
-            <div class="flex flex-col justify-center items-center  w-1/3 ">
-                <h3 class="text-4xl text-[#37474F] font-bold">%98 </h3>
-                <h3>Success Rate</h3>
-            </div>
-
-        </div>
-        
-            <div class=" flex flex-col gap-8 w-full ml-13">
-            <h1 class="text-5xl font-bold ">Find the Best Fit for Your Goals</h1>
-            <div class=" flex justify-between shadow-md rounded-xl gap-4  p-8">
-                <div class="  flex  flex-col justify-betweene shadow-sm  shadow-black rounded-2xl p-6">
-                    <img src="images/graduation.jpeg" class=" rounded-xl  w-full h-36" alt="">
-                    <h3 class="font-bold text-xl">University Program</h3>
-                    <p class="py-10  border-b"> Find bachelor’s, master’s, programs at top
-                        universities around the world. Discover your ideal study destination
-                        and start building your global career.</p>
-
-                    <button class=" flex justify-center py-2   rounded-xl  bg-[#E8EEFF]  my-4 w-36 items-center gap-3">
-                        <h3>Learn More</h3>
-                        <img src="images/right-arrow.png" alt="" class=" w-6 ">
-                    </button>
-                </div>
-
-                <div class="  flex  flex-col justify-betweene shadow-sm shadow-black rounded-2xl p-6">
-                    <img src="images/meeting.jpeg" class=" rounded-xl  w-full h-36 object-cover" alt="">
-                    <h3 class="font-bold text-xl">University Program</h3>
-                    <p class="py-10  border-b"> Find bachelor’s, master’s, programs at top
-                        universities around the world. Discover your ideal study destination
-                        and start building your global career.</p>
-
-                    <button class=" flex justify-center py-2   rounded-xl  bg-[#ff8aed]  my-4 w-36 items-center gap-3">
-                        <h3>Learn More</h3>
-                        <img src="images/right-arrow.png" alt="" class=" w-6 ">
-                    </button>
-                </div>
-
-                <div class="  flex  flex-col justify-betweene shadow-sm opacity-90 shadow-black rounded-2xl p-6">
-                    <img src="images/basketball.jpeg" class=" rounded-xl w-full h-36 object-cover" alt="">
-                    <h3 class="font-bold text-xl">University Program</h3>
-
-                    <p class="py-10  border-b"> Find bachelor’s, master’s, programs at top
-                        universities around the world. Discover your ideal study destination
-                        and start building your global career.</p>
-
-                    <button class=" flex justify-center py-2   rounded-xl  bg-[#f489b0]  my-4 w-36 items-center gap-3">
-                        <h3>Learn More</h3>
-                        <img src="images/right-arrow.png" alt="" class=" w-6 ">
-                    </button>
-                </div>
-            </div>
-
-
-        </div>
-
-
-
-
-    </section>
-    <section class=" px-24 p-20">
-
-                <h1 class="text-2xl m-5"> 
-                    Webinar
-                </h1>
-        <div class=" flex justify-between shadow-md rounded-xl gap-4  p-8">
-            <div class="  flex  flex-col justify-betweene shadow-sm  shadow-black rounded-2xl w-1/3 relative ">
-                <img src="images/11.jpeg" class=" rounded-t-xl  w-full h-36" alt="">
-                <div class="w-32  rounded-xl bg-white absolute flex justify-center  items-center top-3  left-3 overflow-hidden">
-                    <span class="w-1/3 bg-sky-700 text-center p-1 h-full ">11</span>
-                    <span class=" w-2/3 bg-white text-center p-1 h-full" >june 2026</span>    
-                </div>
-                <div class="w-32  rounded-xl bg-white absolute flex justify-center  items-center top-3  right-3 overflow-hidden">
-                    <span class=" w-full bg-sky-950 text-center text-white p-1 h-full" >Upcoming</span>    
-                </div>
-                <div class=" p-3">
-                    <h3 class="font-bold text-xl">University Program</h3>
-                    <p class="py-10  border-b"> Find bachelor’s, master’s, programs at top
-                        universities around the world. Discover your ideal study destination
-                        and start building your global career.</p>
-
-                    <div class=" flex justify-between items-center ">
-
-                        <button class=" py-1 rounded-xl bg-slate-400 p-6 flexp  justify-center items-center">
-                            <h2 class="text-[10px]"> #StudyatTurkish</h2>
-                        </button>
-                        <button
-                            class=" flex justify-center py-2   rounded-xl  bg-[#E8EEFF]  my-4 w-36 items-center gap-3">
-                            <h3>Learn More</h3>
-                            <img src="images/right-arrow.png" alt="" class=" w-6 ">
-
+            <section class="mx-auto px-4 xl:px-20 mt-20 max-w-7xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left">Find the Best Fit for Your Goals</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex flex-col bg-white border border-gray-100 shadow-lg rounded-2xl p-6 hover:shadow-xl transition-shadow">
+                        <img src="images/graduation.jpeg" class="rounded-xl w-full h-44 object-cover mb-4" alt="Graduation">
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">University Programs</h3>
+                        <p class="text-gray-500 pb-6 border-b border-gray-100 flex-grow">Find bachelor’s and master’s programs at top universities around the world. Discover your ideal study destination and build your global career.</p>
+                        <button class="flex justify-center items-center py-2 px-4 rounded-xl bg-[#E8EEFF] hover:bg-[#dbe5ff] transition-colors mt-4 w-36 gap-2 text-sm font-semibold text-blue-700">
+                            <span>Learn More</span>
+                            <img src="images/right-arrow.png" alt="arrow" class="w-4">
                         </button>
                     </div>
-
-                </div>
-
-                
-
-            </div>
-
-            
-
-            <div class="  flex  flex-col justify-betweene shadow-sm  shadow-black rounded-2xl w-1/3 relative ">
-                <img src="images/11.jpeg" class=" rounded-t-xl  w-full h-36" alt="">
-                <div class="w-32  rounded-xl bg-white absolute flex justify-center  items-center top-3  left-3 overflow-hidden">
-                    <span class="w-1/3 bg-sky-700 text-center p-1 h-full ">11</span>
-                    <span class=" w-2/3 bg-white text-center p-1 h-full" >june 2026</span>    
-                </div>
-                <div class="w-32  rounded-xl bg-white absolute flex justify-center  items-center top-3  right-3 overflow-hidden">
-                    <span class=" w-full bg-sky-950 text-center text-white p-1 h-full" >Upcoming</span>    
-                </div>
-                <div class=" p-3">
-                    <h3 class="font-bold text-xl">University Program</h3>
-                    <p class="py-10  border-b"> Find bachelor’s, master’s, programs at top
-                        universities around the world. Discover your ideal study destination
-                        and start building your global career.</p>
-
-                    <div class=" flex justify-between items-center ">
-
-                        <button class=" py-1 rounded-xl bg-slate-400 p-6 flexp  justify-center items-center">
-                            <h2 class="text-[10px]"> #StudyatTurkish</h2>
-                        </button>
-                        <button
-                            class=" flex justify-center py-2   rounded-xl  bg-[#E8EEFF]  my-4 w-36 items-center gap-3">
-                            <h3>Learn More</h3>
-                            <img src="images/right-arrow.png" alt="" class=" w-6 ">
-
+                    <div class="flex flex-col bg-white border border-gray-100 shadow-lg rounded-2xl p-6 hover:shadow-xl transition-shadow">
+                        <img src="images/meeting.jpeg" class="rounded-xl w-full h-44 object-cover mb-4" alt="Meeting">
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">Language Schools</h3>
+                        <p class="text-gray-500 pb-6 border-b border-gray-100 flex-grow">Immerse yourself in a new culture while mastering a language. Find intensive language tracks designed for modern corporate and academic environments.</p>
+                        <button class="flex justify-center items-center py-2 px-4 rounded-xl bg-[#ff8aed]/20 hover:bg-[#ff8aed]/40 transition-colors mt-4 w-36 gap-2 text-sm font-semibold text-pink-700">
+                            <span>Learn More</span>
+                            <img src="images/right-arrow.png" alt="arrow" class="w-4">
                         </button>
                     </div>
-
-                </div>
-            </div>
-                <div class="  flex  flex-col justify-betweene shadow-sm  shadow-black rounded-2xl w-1/3 relative ">
-                <img src="images/11.jpeg" class=" rounded-t-xl  w-full h-36" alt="">
-                <div class="w-32  rounded-xl bg-white absolute flex justify-center  items-center top-3  left-3 overflow-hidden">
-                    <span class="w-1/3 bg-sky-700 text-center p-1 h-full ">11</span>
-                    <span class=" w-2/3 bg-white text-center p-1 h-full" >june 2026</span>    
-                </div>
-                <div class="w-32  rounded-xl bg-white absolute flex justify-center  items-center top-3  right-3 overflow-hidden">
-                    <span class=" w-full bg-sky-950 text-center text-white p-1 h-full" >Upcoming</span>    
-                </div>
-                <div class=" p-3">
-                    <h3 class="font-bold text-xl">University Program</h3>
-                    <span> May 23</span>
-                    <p class="py-10  border-b"> Find bachelor’s, master’s, programs at top
-                        universities around the world. Discover your ideal study destination
-                        and start building your global career.</p>
-
-                    <div class=" flex justify-between items-center ">
-
-                        <button class=" py-1 rounded-xl bg-slate-400 p-6 flexp  justify-center items-center">
-                            <h2 class="text-[10px]"> #StudyatTurkish</h2>
-                        </button>
-                        <button
-                            class=" flex justify-center py-2   rounded-xl  bg-[#E8EEFF]  my-4 w-36 items-center gap-3">
-                            <h3>Learn More</h3>
-                            <img src="images/right-arrow.png" alt="" class=" w-6 ">
-
+                    <div class="flex flex-col bg-white border border-gray-100 shadow-lg rounded-2xl p-6 hover:shadow-xl transition-shadow">
+                        <img src="images/basketball.jpeg" class="rounded-xl w-full h-44 object-cover mb-4" alt="Sports">
+                        <h3 class="font-bold text-xl mb-3 text-gray-800">Summer Schools</h3>
+                        <p class="text-gray-500 pb-6 border-b border-gray-100 flex-grow">Combine study with travel adventures over your holiday breaks. Experience campus life early and make dynamic connections worldwide.</p>
+                        <button class="flex justify-center items-center py-2 px-4 rounded-xl bg-[#f489b0]/20 hover:bg-[#f489b0]/40 transition-colors mt-4 w-36 gap-2 text-sm font-semibold text-red-700">
+                            <span>Learn More</span>
+                            <img src="images/right-arrow.png" alt="arrow" class="w-4">
                         </button>
                     </div>
-
                 </div>
-        </div>
+            </section>
 
-    </section>
-    <section class=" px-24 "> 
-            <div class=" flex flex-col gap-4">
-                <div class=" flex flex-col gap-4"> 
-                    <h1>   Your Academic Bridge to University</h1>
-                    <p>For students who need academic preparation before entering a university, foundation programs help build essential skills and subject-specific knowledge. Required for direct entry into UK universities unless students have A-Level, IB, or AP qualifications.</p>
-                </div>
-                <div class=" flex flex-col gap-4">
-                    <h2>
-                        Foundation Programs
-                    </h2>
-                    <div class="flex gap-4" >
-                        <div class=" flex justify-center items-center p-6 bg-slate-600">
-                            <img src="" alt="">
-                            <p>Develop subject-specific knowledge</p>
+            <section class="mx-auto px-4 xl:px-20 py-20 max-w-7xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left">Webinars</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex flex-col bg-white border border-gray-100 shadow-lg rounded-2xl relative overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="images/uni compound.jpeg" class="w-full h-44 object-cover" alt="Campus compound">
+                        <div class="absolute flex items-center top-3 left-3 rounded-lg overflow-hidden bg-white shadow-md text-xs font-bold">
+                            <span class="bg-[#2ABED9] text-white px-2 py-1">11</span>
+                            <span class="bg-[#E8F6F8] text-[#2ABED9] px-2 py-1 uppercase">June</span>
                         </div>
-                    <div class=" flex justify-center items-center bg-slate-500">
-                            <img src="" alt="">
-                            <p>Develop subject-specific knowledge</p>
+                        <div class="absolute top-3 right-3 rounded-lg overflow-hidden bg-white shadow-md text-[10px] font-bold">
+                            <span class="bg-[#2ABED9] text-white px-2 py-1 block">UPCOMING</span>
+                        </div>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">Study in Turkey Strategy Guide</h3>
+                            <p class="text-gray-500 pb-4 border-b border-gray-100 flex-grow">Explore top admissions procedures, lifestyle considerations, and requirements for Turkish universities.</p>
+                            <div class="flex justify-between items-center mt-4 pt-2">
+                                <span class="bg-gray-100 text-gray-600 text-[11px] px-2.5 py-1 rounded-full font-medium">#StudyInTurkey</span>
+                                <button class="flex justify-center items-center py-1.5 px-3 rounded-lg bg-[#E8EEFF] hover:bg-[#dbe5ff] transition-colors gap-1 text-xs font-semibold text-blue-700">
+                                    <span>Learn More</span>
+                                    <img src="images/right-arrow.png" alt="arrow" class="w-3">
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex gap-4" >
-                        <div class=" flex justify-center items-center p-6 bg-slate-600">
-                            <img src="" alt="">
-                            <p>Develop subject-specific knowledge</p>
-                        </div>
 
-                    <div class=" flex justify-center items-center bg-slate-500">
-                            <img src="" alt="">
-                            <p>Develop subject-specific knowledge</p>
+                    <div class="flex flex-col bg-white border border-gray-100 shadow-lg rounded-2xl relative overflow-hidden opacity-90 hover:shadow-xl transition-shadow">
+                        <img src="images/class.jpeg" class="w-full h-44 object-cover" alt="Classroom">
+                        <div class="absolute top-3 right-3 rounded-lg overflow-hidden bg-white shadow-md text-[10px] font-bold">
+                            <span class="bg-[#37474F] text-white px-2 py-1 block">COMPLETED</span>
+                        </div>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">Undergraduate Application Masterclass</h3>
+                            <p class="text-gray-500 pb-4 border-b border-gray-100 flex-grow">A deep-dive overview tracking exactly how to build competitive global portfolios for target universities.</p>
+                            <div class="flex justify-between items-center mt-4 pt-2">
+                                <span class="bg-gray-100 text-gray-600 text-[11px] px-2.5 py-1 rounded-full font-medium">#Admissions</span>
+                                <button class="flex justify-center items-center py-1.5 px-3 rounded-lg bg-[#E8EEFF] hover:bg-[#dbe5ff] transition-colors gap-1 text-xs font-semibold text-blue-700">
+                                    <span>Watch Video</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col bg-white border border-gray-100 shadow-lg rounded-2xl relative overflow-hidden opacity-90 hover:shadow-xl transition-shadow">
+                        <img src="images/teaching.jpeg" class="w-full h-44 object-cover" alt="Teacher">
+                        <div class="absolute top-3 right-3 rounded-lg overflow-hidden bg-white shadow-md text-[10px] font-bold">
+                            <span class="bg-[#37474F] text-white px-2 py-1 block">COMPLETED</span>
+                        </div>
+                        <div class="p-5 flex flex-col flex-grow">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">Language Testing Requirements</h3>
+                            <p class="text-gray-500 pb-4 border-b border-gray-100 flex-grow">Breaking down acceptable grading ranges across global diagnostics including IELTS, TOEFL, and Duolingo.</p>
+                            <div class="flex justify-between items-center mt-4 pt-2">
+                                <span class="bg-gray-100 text-gray-600 text-[11px] px-2.5 py-1 rounded-full font-medium">#LanguageTesting</span>
+                                <button class="flex justify-center items-center py-1.5 px-3 rounded-lg bg-[#E8EEFF] hover:bg-[#dbe5ff] transition-colors gap-1 text-xs font-semibold text-blue-700">
+                                    <span>Watch Video</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-            </div>
-    </section>
-            
+            <section class="mx-auto px-4 xl:px-20 pb-24 max-w-7xl">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+                    <div class="lg:col-span-1">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-tight">Your Academic Bridge to University</h2>
+                        <p class="text-gray-500 leading-relaxed">For students who need academic preparation before entering a university, foundation programs help build essential skills and subject-specific knowledge. Required for direct entry into UK universities unless students have A-Level, IB, or AP qualifications.</p>
+                    </div>
+                    
+                    <div class="lg:col-span-2 flex flex-col gap-4">
+                        <h3 class="text-xl font-bold text-gray-700 tracking-wide uppercase">Foundation Programs Features</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex justify-center items-center p-6 bg-slate-600 text-white rounded-xl text-center font-medium shadow-sm">
+                                <p>Develop subject-specific knowledge</p>
+                            </div>
+                            <div class="flex justify-center items-center p-6 bg-slate-500 text-white rounded-xl text-center font-medium shadow-sm">
+                                <p>Improve English language proficiency</p>
+                            </div>
+                            <div class="flex justify-center items-center p-6 bg-slate-500 text-white rounded-xl text-center font-medium shadow-sm">
+                                <p>Adapt to international learning cultures</p>
+                            </div>
+                            <div class="flex justify-center items-center p-6 bg-slate-600 text-white rounded-xl text-center font-medium shadow-sm">
+                                <p>Guaranteed university pathways</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>
