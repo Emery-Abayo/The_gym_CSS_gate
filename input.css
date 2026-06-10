@@ -5,6 +5,14 @@
 
 }
 
-.wrapper{
-    @apply mx-4 mx-auto;
+@utility wrapper{
+    @apply container mx-auto px-4 xl:px-30;
+}
+
+@utility stack{
+    @apply grid;
+
+    & > * {
+        grid-area: 1/-1;
+    }
 }

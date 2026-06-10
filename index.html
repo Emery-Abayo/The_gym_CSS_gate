@@ -1,18 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Uni4edu</title>
-    <link rel="stylesheet" href="output.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Uni4edu</title>
+        <link rel="stylesheet" href="output.css" />
     </head>
     <body>
-        <header class="bg-header m-5 flex justify-between items-center">
-            <img src="images/favicon (1).ico" alt="logo" class=" w-12 h-auto">
-            <!--nav bar section-->
-            <div class="flex items-center gap-3">
-                <img src="/images/033c161d-d742-407d-8390-db0edd0e0631.svg" alt="search" class="w-5 h-5">
-                <details class="group relative inline-block text-left select-none">
+        <header class="">
+            <!--phone view header and pre header for the xl view-->
+            <div class=" bg-header xl:bg-[#D9D8D8]/30 border-b-gray-500/20">
+                <div class="wrapper w-full p-5 flex justify-between items-center  xl:py-3">
+                <img src="images/favicon (1).ico" alt="logo" class=" w-14 h-auto xl:hidden">
+            <!--nav bar section phone view-->
+            <div class="flex justify-between items-center gap-4 xl:w-full xl:justify-end xl">
+                <img src="/images/033c161d-d742-407d-8390-db0edd0e0631.svg" alt="search" class="w-5 h-5 xl:hidden">
+                <a href="#" class="hidden xl:inline font-semibold">
+                    Become an Agent
+                </a>
+                <a href="#" class="hidden xl:inline font-semibold">
+                    Partnership
+                </a>
+                <details class="group relative inline-block text-left select-none  ">
 
                     <summary class="list-none flex items-center gap-1 text-sm font-semibold text-gray-800 cursor-pointer focus:outline-none [&::-webkit-details-marker]:hidden">
                         
@@ -121,9 +130,99 @@
                         
                         </div>
                 </details>
-                <img src="/images/burger_menu.svg" class="w-7">
+                <img src="/images/burger_menu.svg" class="w-7 xl:hidden" alt="menu">
+            </div>
+            </div>
+            
+            </div>
+            <!--header for xl view-->
+            <div class="wrapper p-5 hidden xl:flex ">
+                <div class="flex flex-row gap-10">
+                        <img src="/images/logo.svg" alt="logo" class="hidden xl:inline w-14 h-auto">
+                    <div class="flex gap-8 items-center">
+                        <button class="flex items-center gap-3 font-semibold text-lg">
+                            Universities <img src="/images/chevron.svg" alt="chevron" class="w-6">
+                        </button>
 
+                        <button class="flex items-center gap-3 font-semibold text-lg">
+                            Masters
+                        </button>
+
+                        <button class="flex items-center gap-3 font-semibold text-lg">
+                            Language Schools <img src="/images/chevron.svg" alt="chevron" class="w-6">
+                        </button>
+
+                        <button class="flex items-center gap-3 font-semibold text-lg">
+                            Summer Schools <img src="/images/chevron.svg" alt="chevron" class="w-6">
+                        </button>
+
+                        <button class="flex items-center gap-3 font-semibold text-lg">
+                            Highschool
+                        </button>
+
+                        <button class="">
+                            <img src="/images/033c161d-d742-407d-8390-db0edd0e0631.svg" alt="search" class="w-6 object-cover rounded-lg transition-all duration-300 ease-in-out hover:opacity-75 hover:blur-[3px]">
+                        </button>
+
+                        <button class="bg-[#4EC9DF] text-black rounded-md px-6 py-2 font-medium">
+                            login
+                        </button>
+                    </div>
+                </div>
+                
             </div>
         </header>
+        <main>
+            <section class="stack">
+                <img src="/images/Hero.jpeg" class="self-stretch object-cover" alt="hero image">
+                <div class="wrapper">
+                    <h1 class="text-white text-2xl font-bold mt-7 ">
+                        Find Your Perfect <br>
+                        University, Language <br>
+                        School or Summer Schools <br>
+                        Program
+                    </h1>
+                    <p class="text-white font-light">
+                        Uni4edu simplifies the journey to studying abroad by 
+                        bringing top institutions worldwide into a single digital 
+                        platform. Manage your entire process—from school 
+                        selection to application—directly within the system and 
+                        achieve your academic and career goals online.
+                    </p>
+                    <button class="bg-[#4EC9DF] mt-4 rounded-lg w-full py-2 text-white">
+                        Explore Programs
+                    </button>
+                    <button class="text-[#4EC9DF] mt-4 py-2 border border-s-[#4EC9DF] mb-1 bg-white rounded-lg w-full">
+                        Get Free Advice
+                    </button>
+                    
+                </div>
+            </section>
+            <div class="mt-6 wrapper flex flex-col">
+                <div class="border border-gray-100 flex justify-between rounded-xl">
+                    <input type="radio" id="email" name="contact" value="email_v" checked>
+                    <label for="email">University...</label><br>
+
+                    <input type="radio" id="email" name="contact" value="email_v" unchecked>
+                    <label for="email">language...</label><br>
+
+                    <input type="radio" id="email" name="contact" value="email_v" checked>
+                    <label for="email">Summer S...</label><br>
+
+                </div>
+
+                <div class="border border-gray-100 flex justify-between rounded-xl">
+                    <img src="/images/sort.png" alt="sort image" class="w-6">
+                    <input type="search" placeholder="Search" name="search">
+                    <div class="bg-[#3C67FF] rounded-lg hover:bg-[#3C67FF]-200">
+                        <img src="/images/icons8-search-50.png" alt="search_white">
+                    </div>
+                </div>
+                
+            </div>
+            <section class="wrapper">
+                <h2 class="font-bold text-lg ">Why choose Uni4edu</h2>
+            </section>
+        </main>
     </body>
 </html>
