@@ -10,8 +10,8 @@
     <body>
         <header class="">
             <!--phone view header and pre header for the xl view-->
-            <div class=" bg-header xl:bg-[#D9D8D8]/30 border-b-gray-500/20">
-                <div class="wrapper w-full p-5 flex justify-between items-center  xl:py-3">
+            <div class=" bg-white xl:bg-[#D9D8D8]/30 border-b-gray-500/20">
+                <div class="mx-auto px-4 xl:px-20 w-full p-5 flex justify-between items-center  xl:py-3">
                 <img src="images/favicon (1).ico" alt="logo" class=" w-14 h-auto xl:hidden">
             <!--nav bar section phone view-->
             <div class="flex justify-between items-center gap-4 xl:w-full xl:justify-end xl">
@@ -137,7 +137,7 @@
             
             </div>
             <!--header for xl view-->
-            <div class="wrapper p-5 hidden xl:flex ">
+            <div class="mx-auto px-4 xl:px-20 p-5 hidden xl:flex ">
                 <div class="flex flex-row gap-10">
                         <img src="/images/logo.svg" alt="logo" class="hidden xl:inline w-14 h-auto">
                     <div class="flex gap-8 items-center">
@@ -174,9 +174,8 @@
             </div>
         </header>
         <main>
-            <section class="stack">
-                <img src="/images/Hero.jpeg" class="self-stretch object-cover" alt="hero image">
-                <div class="wrapper w-[900px] flex flex-col">
+            <section class="h-screen bg-[url('images/Hero.jpeg')] bg-cover bg-center bg-no-repeat">
+                <div class="mx-auto px-4 xl:ml-12 w-[900px] flex flex-col">
                     <h1 class="text-white text-2xl font-bold mt-7 xl:text-5xl flex justify-start ">
                         Find Your Perfect <br>
                         University, Language <br>
@@ -202,35 +201,76 @@
                     
                 </div>
             </section>
-            <div class="mt-6 wrapper flex flex-col">
-                <div class="border border-gray-100 flex justify-between rounded-xl">
-                    <input type="radio" id="email" name="contact" value="email_v" checked>
-                    <label for="email">University...</label><br>
-
-                    <input type="radio" id="email" name="contact" value="email_v" unchecked>
-                    <label for="email">language...</label><br>
-
-                    <input type="radio" id="email" name="contact" value="email_v" checked>
-                    <label for="email">Summer S...</label><br>
-
+            
+            <div class="flex justify-center md:mt-10 sm:mt-10">
+        <div class="flex bg-blue-200 relative mt-[-7%] w-[92%] p-4 rounded-xl opacity-[0.9]">
+            <div class="w-[100%] h-[100%] rounded-b-[20px]">
+                <div class="flex font-semibold text-[18px]">
+                    <button class="blue px-10 py-3 bg-blue-500 rounded-t-lg text-white">University Programs</button>
+                    <button class="red px-10 py-3 bg-gray-100 rounded-t-lg">Language Schools</button>
+                    <button class="purple px-10 py-3 bg-gray-100 rounded-t-lg">Summer Schools</button>
                 </div>
+                <div class="flex w-full p-3 h-[70%] bg-white items-center rounded-b-[20px]">
+                    <div class="px-6 py-3 bg-white w-[25%]">
+                        <p>Location</p>
+                        <select>
+                            <option>Select Location</option>
+                            <option>Australia</option>
+                            <option>Canada</option>
+                            <option>Cyprus</option>
+                            <option>France</option>
+                            <option>Germany</option>
+                        </select>
+                    </div>
+                    <div class="px-6 py-3 bg-white w-[25%]">
+                        <p>Institution</p>
+                        <select>
+                            <option>Select Institution</option>
+                            <option>Abertay University</option>
+                            <option>Canada</option>
+                            <option>Cyprus</option>
+                            <option>France</option>
+                            <option>Germany</option>
+                        </select>
 
-                <div class="border border-gray-100 flex justify-between rounded-xl">
-                    <img src="/images/sort.png" alt="sort image" class="w-6">
-                    <input type="search" placeholder="Search" name="search">
-                    <div class="bg-[#3C67FF] rounded-lg hover:bg-[#3C67FF]-200">
-                        <img src="/images/icons8-search-50.png" alt="search_white">
+                    </div>
+                    <div class="px-6 py-3 bg-white w-[25%]">
+                        <p>Discipline</p>
+                        <select>
+                            <option>Select Discipline</option>
+                            <option>Agriculutral Sciences</option>
+                            <option>Architecture</option>
+                            <option>Art</option>
+                            <option>Aviation Management</option>
+                            <option>Germany</option>
+                        </select>
+                    </div>
+                    <div class="px-6 py-3 bg-white w-[25%]">
+                        <p>Program Level</p>
+                        <select>
+                            <option>Select Program Level</option>
+                            <option>Bachelor's Degree</option>
+                            <option>Certificate & Diploma</option>
+                            <option>Doctoral & PhD</option>
+                            <option>Master's & Postgraduate</option>
+                        </select>
+                    </div>
+                    <div class="bg-blue-600 h-10 w-10 rounded-lg flex items-center justify-center">
+                        <img src="images/icons8-search-50.png" class="w-7 h-7">
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
                 
             </div>
-            <section class="wrapper mt-7">
+            <section class="mx-auto px-4 xl:px-20 mt-7">
                 <h2 class="font-bold text-4xl text-[#2D2D2D] ">Why choose Uni4edu?</h2>
                 <p class="mt-4 text-gray-500">Uni4Edu brings together thousands of schools and programs on a single platform, making it easy for students to apply quickly and <br>
                     access free counseling, visa support, and exclusive scholarship opportunities.</p>
             </section>
             <section>
-                <section class="wrapper mt-5 flex justify-between">
+                <section class="mx-auto px-4 xl:px-20 mt-5 flex justify-between">
                 <div class="border-2 border-gray-400/20 rounded-lg w-[350px] shadow-xl p-4 flex flex-col items-center">
                     <div class="flex gap-6">
                         <img src="/images/school.png" class="w-15 h-15">
