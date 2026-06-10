@@ -3,8 +3,11 @@
     "@tailwindcss/cli": "^4.3.0",
     "tailwindcss": "^4.3.0"
   },
+  "name": "uni4edu",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./input.css -o ./output.css --minify"
   },
   "devDependencies": {
     "prettier-plugin-tailwindcss": "^0.8.0"

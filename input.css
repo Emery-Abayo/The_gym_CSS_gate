@@ -5,8 +5,8 @@
 
 }
 
-@utility wrapper{
-    @apply container mx-auto px-4 xl:px-30;
+.wrapper{
+    @apply container mx-auto px-4 xl:px-20;
 }
 
 @utility stack{
